@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- <h1>Hello There</h1>
+    <p>I am Pranauv</p>
+ -->
+    <div class="container">
+        <h1>To Do List</h1>
+        <div class="card">
+            <%= date %>
+        </div>
+        <div class="card-2">
+            <div class="element">
+                <p>Buy Food</p>
+                <hr>
+            </div>
+            <div class="element">
+                <p>Cook Food</p>
+                <hr>
+            </div>
+            <div class="element">
+                <p>Eat Food</p>
+                <hr>
+            </div>
+            <% arr.forEach((e)=>{ %>
+                <div class="element">
+                    <p>
+                        <%= e %>
+                    </p>
+                    <hr>
+                </div>
+            <% }) %>
+
+            <div class="element" id="form">
+                <form action="/" method="post">
+                    <input type="text" name="input"  placeholder="New Item">
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
